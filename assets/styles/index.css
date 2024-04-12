@@ -19,4 +19,62 @@ html {
 
 li {
   list-style: none;
+}
+
+a,
+a:visited {
+  color: 243, 243, 243;
+}
+
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: merri, serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  background: none;
+  border: 2px solid rgb(17, 17, 17);
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+header {
+  color: 243, 243, 243;
+  position: relative;
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */

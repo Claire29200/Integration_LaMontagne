@@ -35,5 +35,45 @@ li{
 }
 a,
 a:visited {
-    
+    color: $white1;   
+}
+body{
+    background: url(../img/bg.jpg) fixed center/cover;
+    text-align: center;
+    font-family: $font2;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &:before {  // élément pour créer l'effet , le soleil se lève, quand on arrive sur la page
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background:  $black1;
+        animation: animBefore 1.5s ease forwards; // tu restes  dans le même état après la transition ,tu passes d'un écran noir à un la page
+        animation-delay: 0.15s;
+
+        @keyframes animBefore {
+            to {
+                opacity: 0;
+            }
+        }
+
+    }
+}
+
+.btn {
+    background: none;
+    border: 2px solid $black1;
+    height: 45px;
+    width: 170px;
+    font-size:  0.75rem;
+    cursor: pointer;
+    @include title;
+
+    &:hover{
+        transform: scale(1.05);                                      
+    }
 }
