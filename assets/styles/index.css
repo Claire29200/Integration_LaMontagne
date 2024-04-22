@@ -196,7 +196,39 @@ header nav .nav-left li:hover {
   background: rgb(243, 243, 243);
   color: rgb(17, 17, 17);
 }
+header nav .nav-right {
+  font-size: 1.1rem;
+  min-width: 100px;
+  width: 25%;
+  max-width: 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 10px;
+}
+header nav .nav-right li {
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+}
+header nav .nav-right li:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
 
-img {
-  width: 50%;
+main {
+  width: 85%;
+  margin: 0 auto 30px;
+  background: rgb(243, 243, 243);
+}
+main img {
+  width: 100%;
+}
+main .section1 {
+  width: 80%;
+  margin: 0 auto;
+}
+main .section1 span {
+  padding: 70px 0;
+  position: relative;
+  display: block;
 }/*# sourceMappingURL=index.css.map */
