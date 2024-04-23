@@ -17,12 +17,59 @@ img {
         position: relative;
         display: block;
 
-        &:before, &:after:{
+        &:before ,
+        &:after {
             content: "";
             position: absolute;
             width: 37%;
-            
+            height: 1px;
+            background: $grey1;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media screen and (max-width: 700px) {
+                width: 30%;
+            }
+            @media screen and (max-width: 700px) {
+                width: 24%;
+            }
+        }
+
+        &:before {
+            left: 0;
+       }
+        &:after {
+            right: 0;
         }
     }
+    h2 {
+        @include title ;
+        font-size: 3rem;
+
+        @media screen and (max-width: 700px) {
+            font-size: 1.5rem;
+        }
+    }
+    p{
+       
+        width: 60%;
+        margin: 30px auto;
+        line-height: 35px;
+        font-style: italic;
+        font-size: 0.8rem;
+    }
+    .btn {
+        margin: 50px 0 90px;
+    }
 }
+.section2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid $grey1;
+
+    
+}
+
+
+
 }
