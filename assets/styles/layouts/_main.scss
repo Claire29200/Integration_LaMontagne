@@ -67,9 +67,33 @@ img {
     grid-template-columns: 50% 50%;
     border-top: 1px solid $grey1;
 
-    
+    @media  screen and (max-width: 700px ){
+        grid-template-columns: 1fr;
+    }
+
+    .left-part,
+    .right-part {
+        padding: 60px;
+
+        span{
+            font-size: 0.75rem;
+        }
+        h3 {
+            margin: 20px 0;
+            @include title;
+            line-height: 28px;
+
+        }
+        p{
+            text-align: left;
+            line-height: 30px;
+            margin: 30px 0;
+            font-style: 0.8rem;
+        }
+    }
+    .left-part{
+        border-right: 1px solid $grey1;
+    }   
 }
-
-
 
 }
